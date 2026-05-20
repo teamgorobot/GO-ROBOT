@@ -207,137 +207,16 @@ def run():
         print("Button pressed, Run started successfully")
     hub.light.on(Color.GREEN)
     hub.display.icon(Icon.ARROW_UP)
-
-    # Code here
-    # getting alex
-    straight(50)
-    turn(left, 90)
-    straight(50)
-    turn(right, 90)
-    straight(38)
-    grab()
-    straight(-140)
-    turn(left, 90)
-    # driving to mud area
-    speed.fast()
-    straight(350)
-    speed.slow()
-    turn(left, 90)
-    straight(40)
-    # pushing mud bricks away
-    # row 1
-    turnarm(90)
-    speed.fast()
-    straight(-130)
-    turnarm(-90)
-    straight(130)
-    speed.slow()
-    turn(left, 90)
-    straight(35)
-    turn(right, 90)
-    # row 2
-    turnarm(90)
-    speed.fast()
-    straight(-85)
-    straight(10)
-    turnarm(-90)
-    straight(30)
-    speed.slow()
-    # putting away alex
-    turn(right, 50)
-    straight(20)
-    grab()
-    straight(-15)
-    turn(left, 50)
-    straight(-25)
-    turn(left, 90)
-    # driving to get blue figure
-    speed.fast()
-    straight(345)
-    speed.slow()
-    turn(left, 90)
-    straight(95)
-    grab()
-    straight(-85)
-    turn(left, 90)
-    # driving to mud area to put away blue figure
-    speed.fast()
-    straight(385)
-    speed.slow()
-    turn(right, 90)
-    straight(60)
-    grab()
-    straight(-55)
-    turn(left, 90)
-    # driving to random artefacts
-    speed.fast()
-    straight(-160)
-    speed.slow()
-    turn(right, 90)
-    straight(110)
-    # Slot 1
-    grab()
-    color = checkcolor(True)
-    if color == Color.BLUE:
-        turn(right, 180)
-        speed.fast()
-        straight(175)
-        speed.slow()
-        turn(left, 90)
-        straight(15)
-        turn(right, 90)
-        straight(20)
-        grab()
-    elif color == Color.RED:
-        turn(right, 180)
-        speed.fast()
-        straight(185)
-        speed.slow()
-        turn(left, 90)
-        straight(110)
-        turn(right, 90)
-        straight(10)
-        grab()
-        straight(-25)
-        turn(left, 90)
-        straight(-90)
-        turn(left,90)
-        straight(180)
-        grab()
-    elif color == Color.GREEN:
-        turn(right, 180)
-        speed.fast()
-        straight(175)
-        speed.slow()
-        turn(left, 90)
-        straight(60)
-        turn(right, 90)
-        straight(53)
-        grab()
-    elif color == Color.YELLOW:
-        turn(right, 180)
-        speed.fast()
-        straight(175)
-        speed.slow()
-        turn(left, 90)
-        straight(73)
-        turn(right, 90)
-        straight(23)
-        grab()
-    elif color == Color.BLACK:
-        turn(right, 180)
-        speed.fast()
-        straight(175)
-        speed.slow()
-        turn(left, 90)
-        straight(-33)
-        turn(right, 90)
-        straight(30)
-    
+speed.fast()
+turn(left, 90)
+straight(45)
+turn(right, 90)
+straight(65)
+grab() 
 
 
 
-    if debug >= 1:
+if debug >= 1:
         print("Run ended successfully")
 
 if not loop:
@@ -359,4 +238,9 @@ if debug >= 1:
 # grab(): grab or release object
 # checkcolor(True/False) check color of color sensor, if True check repeatedly for 5 seconds
 # button.buttonname: button variables
-# debug = ...: Change for debug log level
+# debug = ...: Change for debug log levelstraight(50)
+turn(left, 90)
+straight(50)
+turn(right, 90)
+straight(38)
+grab()
