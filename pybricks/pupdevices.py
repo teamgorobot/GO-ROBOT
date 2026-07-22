@@ -4,7 +4,11 @@ class Light:
 
 class Motor:
     def __init__(self, *args, **kwargs):
-        self.control = type("Control", (), {"limits": lambda self, *a, **k: None})()
+        class Control:
+            def limits(self, *a, **k):
+                return None
+
+        self.control = Control()
 
 
 class ColorSensor:
