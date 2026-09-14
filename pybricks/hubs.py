@@ -3,6 +3,7 @@ class PrimeHub:
         self.light = _LightController()
         self.display = _DisplayController()
         self.buttons = _ButtonsController()
+        self.speaker = _SpeakerController()
         self.system = _SystemController()
         self.battery = _BatteryController()
 
@@ -16,6 +17,9 @@ class _LightController:
 
 
 class _DisplayController:
+    def off(self):
+        return None
+
     def pixel(self, *args, **kwargs):
         return None
 
@@ -26,6 +30,11 @@ class _DisplayController:
 class _ButtonsController:
     def pressed(self):
         return []
+
+
+class _SpeakerController:
+    def beep(self, *args, **kwargs):
+        return None
 
 
 class _SystemController:
