@@ -97,7 +97,7 @@ class speed:
     @staticmethod
     def slow():
         drivebase.settings(200, 200, 100, 100)
-    def set(speed=200)
+    def set(speed=200):
         speed2 = speed / 2
         drivebase.settings(speed, speed, speed2, speed2)
 if debug >= 2:
