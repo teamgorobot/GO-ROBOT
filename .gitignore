@@ -1,0 +1,46 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# VS Code local workspace files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/*.code-snippets
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
